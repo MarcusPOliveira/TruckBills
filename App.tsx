@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, { useCallback, useEffect, useState } from 'react';
 import { StatusBar, View } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
@@ -10,6 +11,7 @@ import {
 
 import AppProvider from './src/hooks';
 import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
@@ -43,7 +45,7 @@ export default function App() {
     <AppProvider>
       <StatusBar barStyle='default' translucent backgroundColor="transparent" />
       <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-        <Home />
+        <Routes />
       </View>
     </AppProvider>
   );
