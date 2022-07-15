@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
+import { Toggle } from '../../components/Toggle';
+import { SeparatorLine } from '../../components/SeparatorLine';
+import { TravelCard } from '../../components/TravelCard';
 import {
   Container,
   Header,
@@ -9,12 +12,13 @@ import {
   Greetings,
   Name,
   ToggleContent,
+  TravelsHeader,
+  Title,
+  TotalTravels,
+  Content,
 } from './styles';
-import { Toggle } from '../../components/Toggle';
 
 export function Home() {
-
-  const { colors } = useContext(ThemeContext);
 
   return (
     <Container>
@@ -28,6 +32,14 @@ export function Home() {
           <Toggle />
         </ToggleContent>
       </Header>
+      <TravelsHeader>
+        <Title>Suas viagens ativas</Title>
+        <TotalTravels>3 viagens</TotalTravels>
+      </TravelsHeader>
+      <SeparatorLine />
+      <Content>
+        <TravelCard />
+      </Content>
     </Container>
   );
 }

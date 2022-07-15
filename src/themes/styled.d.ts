@@ -15,6 +15,7 @@ declare module 'styled-components' {
       alert: string,
       text: string,
       white: string,
+      main_green: string,
     },
     fonts: {
       regular: string,

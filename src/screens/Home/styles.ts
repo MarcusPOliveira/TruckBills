@@ -17,9 +17,7 @@ export const Header = styled.View`
   padding: 50px 60px;
 `;
 
-export const Welcome = styled.View`
-  
-`;
+export const Welcome = styled.View``;
 
 export const Photo = styled.Image`
   width: ${RFValue(72)}px;
@@ -47,4 +45,30 @@ export const ToggleContent = styled.View`
   flex: 1px;
   align-items: flex-end;
   justify-content: center;
+`;
+
+export const TravelsHeader = styled.View`
+  width: 90%;
+  flex: 0.1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Title = styled.Text`
+  font-size: ${RFValue(20)}px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.text};
+`;
+
+export const TotalTravels = styled.Text`
+  font-size: ${RFValue(14)}px;
+  font-family: ${({ theme }) => theme.fonts.regular};
+  color: ${({ theme }) => theme.colors.text};
+`;
+
+export const Content = styled.View`
+  flex: 0.5;
+  align-items: center;
+  width: 100%;
 `;

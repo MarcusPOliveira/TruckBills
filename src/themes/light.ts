@@ -12,6 +12,7 @@ export default {
     alert: '#A31621',
     text: '#2D2D2D',
     white: '#FFFFFF',
+    main_green: '#23AA49'
   },
   fonts: {
     regular: 'DMSans_400Regular',
