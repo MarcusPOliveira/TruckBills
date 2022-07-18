@@ -12,6 +12,8 @@ import {
 import AppProvider from './src/hooks';
 import { Home } from './src/screens/Home';
 import { Routes } from './src/routes';
+import { ThemeProvider } from 'styled-components';
+import themes from './src/themes';
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);

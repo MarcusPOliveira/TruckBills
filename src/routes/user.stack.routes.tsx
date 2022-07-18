@@ -10,10 +10,6 @@ export function UserStackRoutes() {
   return (
     <Navigator screenOptions={{ headerShown: false }} >
       <Screen
-        name="Home"
-        component={Home}
-      />
-      <Screen
         name="OnboardingScreens"
         component={OnboardingScreens}
       />
