@@ -9,7 +9,7 @@ export const Container = styled.View`
 
 export const VehiclesHeader = styled.View`
   width: 90%;
-  flex: 0.1;
+  flex: 0.15;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

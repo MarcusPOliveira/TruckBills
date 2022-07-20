@@ -16,6 +16,7 @@ declare module 'styled-components' {
       text: string,
       white: string,
       main_green: string,
+      navy_blue: string,
     },
     fonts: {
       regular: string,

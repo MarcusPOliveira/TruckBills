@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import { Platform } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
+import { MaterialIcons, FontAwesome5, FontAwesome, AntDesign } from '@expo/vector-icons';
 
 import { ThemeContext } from 'styled-components';
 import { Home } from '../screens/Home';
 import { MyVehicles } from '../screens/MyVehicles';
 import { NewButton } from '../components/NewButton';
+import { Transactions } from '../screens/Transactions';
+import { Resume } from '../screens/Resume';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -46,6 +48,24 @@ export function UserTabRoutes() {
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="truck-moving" size={20} color={color} />
+          )
+        }}
+      />
+      <Screen
+        name="transactions"
+        component={Transactions}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="dollar" size={20} color={color} />
+          )
+        }}
+      />
+      <Screen
+        name="resume"
+        component={Resume}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="piechart" size={20} color={color} />
           )
         }}
       />
